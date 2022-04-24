@@ -17,16 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homepage" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PcL-al-tDx">
-                                <rect key="frame" x="0.0" y="44" width="414" height="389.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="namePage" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PcL-al-tDx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FF9-2y-fEc">
-                                <rect key="frame" x="120" y="433.5" width="174" height="29"/>
+                                <rect key="frame" x="27.5" y="424.5" width="359" height="47"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Enter your name:">
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="25"/>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="Chalkduster"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -34,16 +35,41 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" name="AccentColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcZ-e1-buG">
+                                <rect key="frame" x="120" y="521.5" width="174" height="34"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhx-aj-E9S">
+                                <rect key="frame" x="18" y="223" width="378.5" height="81"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="BubblePop!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="64" name="Chalkduster"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PcL-al-tDx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2L3-Rg-nJ2"/>
-                            <constraint firstItem="PcL-al-tDx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ehq-Ag-LWT"/>
-                            <constraint firstItem="FF9-2y-fEc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F1W-87-g8x"/>
-                            <constraint firstItem="FF9-2y-fEc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HXo-WR-xdD"/>
-                            <constraint firstItem="FF9-2y-fEc" firstAttribute="top" secondItem="PcL-al-tDx" secondAttribute="bottom" id="I3h-6Z-8Mi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PcL-al-tDx" secondAttribute="trailing" id="vi8-SG-Iom"/>
+                            <constraint firstItem="FF9-2y-fEc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Nu-Bj-sv3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vcZ-e1-buG" secondAttribute="trailing" priority="750" constant="120" id="Azb-0v-GM8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vcZ-e1-buG" secondAttribute="bottom" priority="250" constant="316" id="K2j-yZ-JpX"/>
+                            <constraint firstItem="PcL-al-tDx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KF7-vY-EiB"/>
+                            <constraint firstItem="PcL-al-tDx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WKM-LZ-75x"/>
+                            <constraint firstItem="vcZ-e1-buG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="90.5" id="XGf-4x-0LH"/>
+                            <constraint firstItem="vcZ-e1-buG" firstAttribute="top" secondItem="FF9-2y-fEc" secondAttribute="bottom" constant="50" id="ZUF-6d-1qv"/>
+                            <constraint firstItem="FF9-2y-fEc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fyz-WG-c1o"/>
+                            <constraint firstItem="PcL-al-tDx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lbQ-x2-JAz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PcL-al-tDx" secondAttribute="bottom" id="mS3-YF-DBY"/>
+                            <constraint firstItem="fhx-aj-E9S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-184.5" id="w6L-kA-p0J"/>
+                            <constraint firstItem="fhx-aj-E9S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wjT-lm-dQq"/>
+                            <constraint firstItem="vcZ-e1-buG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="750" constant="120" id="x6B-0E-cuT"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -53,7 +79,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="homepage" width="240" height="135"/>
+        <image name="namePage" width="270" height="480"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
