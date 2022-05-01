@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "thumb-image-vector-cog-icon-machine-gear-transparent-png-272206-2.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "thumb-image-vector-cog-icon-machine-gear-transparent-png-272206-2@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "thumb-image-vector-cog-icon-machine-gear-transparent-png-272206-2@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

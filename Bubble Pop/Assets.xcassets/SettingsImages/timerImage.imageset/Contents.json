@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "egg-timer-hourglass-processing-sand-timer-timer-icon-transparent-png-2054107.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "egg-timer-hourglass-processing-sand-timer-timer-icon-transparent-png-2054107@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "egg-timer-hourglass-processing-sand-timer-timer-icon-transparent-png-2054107@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

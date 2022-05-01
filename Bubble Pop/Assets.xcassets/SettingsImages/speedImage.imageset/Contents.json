@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "thunder-bolt-plain-clip-art-at-clker-lightning-bolt-clipart-logo-symbol-trademark-text-transparent-png-324001.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "thunder-bolt-plain-clip-art-at-clker-lightning-bolt-clipart-logo-symbol-trademark-text-transparent-png-324001@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "thunder-bolt-plain-clip-art-at-clker-lightning-bolt-clipart-logo-symbol-trademark-text-transparent-png-324001@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
