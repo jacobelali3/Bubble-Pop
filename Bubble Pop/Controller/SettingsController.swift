@@ -11,37 +11,41 @@ class SettingsController: UIViewController{
     @IBOutlet weak var timeSlider: UISlider!
     @IBOutlet weak var bubbleSlider: UISlider!
     @IBOutlet weak var bubbleSizeSlider: UISlider!
+    @IBOutlet weak var difficultySlider: UISlider!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var bubbleLabel: UILabel!
     @IBOutlet weak var bubbleSizeLabel: UILabel!
+    @IBOutlet weak var difficultyLabel: UILabel!
     
+    
+    //Save slider/label values based on user selection
     @IBAction func saveSettings(_ sender: UIButton) {
         DataStore.access.bubbleNumber = Int(bubbleSlider.value)
         DataStore.access.timerNumber = Int(timeSlider.value)
-        DataStore.access.bubbleSizeNumber = Double(round(1000 * bubbleSizeSlider.value) / 1000)
-        print(DataStore.access.bubbleSizeNumber)
+        DataStore.access.bubbleSizeNumber = Double(bubbleSizeSlider.value).roundToDecimal(2)
+        DataStore.access.difficultyNumber = Int(difficultySlider.value)
+    
+        updateLabels()
     }
-//    @IBAction func moveTimeSlider(_ sender: UISlider) {
-//        timeLabel.text = "\(Int(sender.value))"
-//    }
-//    @IBAction func moveBubbleSlider(_ sender: UISlider) {
-//
-//    }
-//    @IBAction func moveSizeSlider(_ sender: UISlider) {
-//
-//    }
-//
+ 
+    //initialise sliders and labels
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Instantiate current settings
+        timeSlider.value = Float(DataStore.access.timerNumber)
+        bubbleSlider.value = Float(DataStore.access.bubbleNumber)
+        bubbleSizeSlider.value = Float(DataStore.access.bubbleSizeNumber)
+        updateLabels()
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "goBackHome" {
-//            let VC = segue.destination as! HomeController
-//            VC.remainingTime = Int(timeSlider.value)
-//            VC.bubbleNumber = Int(bubbleSlider.value)
-//            VC.speedNumber = Int(speedSlider.value)
-//        }
-//
-//    }
+    /*
+     Update label settings based on stored values
+     */
+    func updateLabels(){
+        timeLabel.text = String(DataStore.access.timerNumber)
+        bubbleLabel.text = String(DataStore.access.bubbleNumber)
+        bubbleSizeLabel.text = String(DataStore.access.bubbleSizeNumber)
+        difficultyLabel.text = String(DataStore.access.difficultyNumber)
+    }
+    
 }

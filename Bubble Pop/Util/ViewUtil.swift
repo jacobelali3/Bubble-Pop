@@ -6,6 +6,9 @@
 //
 
 import UIKit
+
+
+//Assists with keyboard functionality.
 extension UIViewController {
     @objc func hide() {
         view.endEditing(true)

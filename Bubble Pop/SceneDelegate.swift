@@ -1,8 +1,8 @@
 //
-//  SceneDelegate.swift
+//  Bubble.swift
 //  Bubble Pop
 //
-//  Created by user215019 on 4/24/22.
+//  Created by Jacob Elali on 16/4/2022.
 //
 
 import UIKit

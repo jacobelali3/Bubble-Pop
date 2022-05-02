@@ -10,5 +10,5 @@ import Foundation
 //default values
 struct Player{
     var name : String = "somePlayer"
-    var score : Int = 0
+    var score : Double = 0.0
 }

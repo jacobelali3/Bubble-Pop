@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SAa-xk-T2n">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,7 +14,7 @@
             <objects>
                 <navigationController id="SAa-xk-T2n" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ede-h6-U6r">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <rect key="frame" x="0.0" y="24" width="1024" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -30,15 +30,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeController" customModule="Bubble_Pop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="namePage" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PcL-al-tDx">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FF9-2y-fEc">
-                                <rect key="frame" x="59.666666666666657" y="393" width="308.66666666666674" height="40.333333333333314"/>
+                                <rect key="frame" x="317" y="572.5" width="390.5" height="81"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Enter your name:">
                                         <attributes>
@@ -88,7 +88,7 @@
                                 </variation>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcZ-e1-buG" customClass="nameTextField">
-                                <rect key="frame" x="114" y="446" width="200" height="34"/>
+                                <rect key="frame" x="362" y="666" width="300" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="2Kc-mS-36E">
                                         <variation key="heightClass=regular-widthClass=regular" constant="300"/>
@@ -98,7 +98,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhx-aj-E9S">
-                                <rect key="frame" x="81" y="334.66666666666669" width="266" height="57"/>
+                                <rect key="frame" x="258" y="448.5" width="508.5" height="109"/>
                                 <attributedString key="attributedText">
                                     <fragment content="BubblePop!">
                                         <attributes>
@@ -144,22 +144,13 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NH-Cu-P9l" customClass="playButton">
-                                <rect key="frame" x="164" y="523" width="100" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="XU8-KV-brJ">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="50"/>
-                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
-                                    </constraint>
-                                    <constraint firstAttribute="width" constant="100" id="a4S-Vq-n2e">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="120"/>
-                                    </constraint>
-                                </constraints>
+                                <rect key="frame" x="473.5" y="750.5" width="77" height="45"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
                                     <attributedString key="attributedTitle">
                                         <fragment content="PLAY">
                                             <attributes>
-                                                <font key="NSFont" size="24" name="ChalkboardSE-Bold"/>
+                                                <font key="NSFont" size="22" name="ChalkboardSE-Bold"/>
                                                 <font key="NSOriginalFont" size="24" name="ChalkboardSE-Bold"/>
                                             </attributes>
                                         </fragment>
@@ -171,7 +162,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSV-ON-gLV" userLabel="SettingsButton">
-                                <rect key="frame" x="343" y="88" width="75" height="69"/>
+                                <rect key="frame" x="894" y="74" width="120" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="kyg-i6-qps">
                                         <variation key="heightClass=compact-widthClass=compact" constant="56"/>
@@ -189,16 +180,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQZ-lo-3Kw" customClass="playButton">
-                                <rect key="frame" x="126.66666666666669" y="603" width="175" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="B8A-7M-vpu">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="200"/>
-                                    </constraint>
-                                    <constraint firstAttribute="height" constant="60" id="IaY-QM-lEi">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
-                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
-                                    </constraint>
-                                </constraints>
+                                <rect key="frame" x="425" y="879" width="174" height="48"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
                                     <attributedString key="attributedTitle">
@@ -215,6 +197,22 @@
                                     <segue destination="o1b-ig-Hrs" kind="show" identifier="goToHighScoreFromHome" id="WpT-hb-1WM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVK-dc-Bf8">
+                                <rect key="frame" x="688.5" y="670.5" width="47" height="25"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Save">
+                                            <attributes>
+                                                <font key="NSFont" size="10" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="acU-A2-ThJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -224,6 +222,7 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="220"/>
                             </constraint>
                             <constraint firstItem="PcL-al-tDx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="33E-cV-hwz"/>
+                            <constraint firstItem="qVK-dc-Bf8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3ec-VT-Lar"/>
                             <constraint firstItem="eSV-ON-gLV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AJS-0Z-EXU"/>
                             <constraint firstItem="8NH-Cu-P9l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I53-d9-f2L"/>
                             <constraint firstItem="vcZ-e1-buG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ke4-3Y-3W5"/>
@@ -246,6 +245,9 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="60"/>
                             </constraint>
                             <constraint firstItem="XQZ-lo-3Kw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rCx-6F-iOk"/>
+                            <constraint firstItem="qVK-dc-Bf8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="135" id="rRp-b1-Ydj">
+                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                            </constraint>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hMe-3o-zue"/>
@@ -255,126 +257,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-641" y="98"/>
+            <point key="canvasLocation" x="-634.67741935483866" y="94.527802294792579"/>
         </scene>
         <!--Game Controller-->
         <scene sceneID="3Ka-n4-hXu">
             <objects>
                 <viewController id="XtQ-Ck-22O" customClass="GameController" customModule="Bubble_Pop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jzg-px-aak">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="IvI-O5-QGW">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <color key="tintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSd-0A-jBv" userLabel="Tag Stack">
-                                <rect key="frame" x="59.666666666666657" y="69" width="309" height="38.666666666666657"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTM-8V-DQD" userLabel="Game View" customClass="gameView">
+                                <rect key="frame" x="120" y="180" width="784" height="1076"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="NZT-ht-9OW" userLabel="Tracker Stack">
+                                <rect key="frame" x="207.5" y="89" width="609" height="45.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLP-sG-ny9" userLabel="UserNameTag">
-                                        <rect key="frame" x="0.0" y="0.0" width="36" height="38.666666666666664"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="33" id="Soi-aW-Eay">
-                                                <variation key="heightClass=compact-widthClass=compact" constant="36"/>
-                                                <variation key="heightClass=compact-widthClass=regular" constant="54"/>
-                                                <variation key="heightClass=regular-widthClass=compact" constant="36"/>
-                                                <variation key="heightClass=regular-widthClass=regular" constant="57"/>
-                                            </constraint>
-                                        </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="You:">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="17" name="ChalkboardSE-Bold"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=compact-widthClass=regular">
-                                            <attributedString key="attributedText">
-                                                <fragment content="You:">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="25" name="ChalkboardSE-Bold"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <attributedString key="attributedText">
-                                                <fragment content="You:">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="25" name="ChalkboardSE-Bold"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXb-lz-UIn" userLabel="User Name">
-                                        <rect key="frame" x="36.000000000000007" y="0.0" width="33.999999999999993" height="38.666666666666664"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" id="fa9-nd-UQQ">
-                                                <variation key="heightClass=compact-widthClass=compact" constant="51"/>
-                                                <variation key="heightClass=compact-widthClass=regular" constant="180"/>
-                                                <variation key="heightClass=regular-widthClass=compact" constant="34"/>
-                                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
-                                            </constraint>
-                                        </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Jacob">
-                                                <attributes>
-                                                    <font key="NSFont" size="27" name="ChalkboardSE-Bold"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=compact-widthClass=compact">
-                                            <attributedString key="attributedText">
-                                                <fragment content="Jacob">
-                                                    <attributes>
-                                                        <font key="NSFont" size="12" name="ChalkboardSE-Bold"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <attributedString key="attributedText">
-                                                <fragment content="Jacob">
-                                                    <attributes>
-                                                        <font key="NSFont" size="12" name="ChalkboardSE-Bold"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <attributedString key="attributedText">
-                                                <fragment content="Jacob">
-                                                    <attributes>
-                                                        <font key="NSFont" size="27" name="ChalkboardSE-Bold"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </variation>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QM-Td-Ngp" userLabel="TimeLeftTag">
-                                        <rect key="frame" x="70" y="0.0" width="65.333333333333314" height="38.666666666666664"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="65.5" id="hsx-XF-J5H">
-                                                <variation key="heightClass=compact-widthClass=regular" constant="122.5"/>
-                                                <variation key="heightClass=regular-widthClass=regular" constant="118.5"/>
-                                            </constraint>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="125.5" height="45.5"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="Time left:">
+                                            <fragment content="Time left: ">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="17" name="ChalkboardSE-Bold"/>
@@ -385,7 +292,7 @@
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=compact-widthClass=compact">
                                             <attributedString key="attributedText">
-                                                <fragment content="Time left:">
+                                                <fragment content="Time left: ">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <font key="NSFont" size="11" name="ChalkboardSE-Bold"/>
@@ -396,7 +303,7 @@
                                         </variation>
                                         <variation key="heightClass=compact-widthClass=regular">
                                             <attributedString key="attributedText">
-                                                <fragment content="Time left:">
+                                                <fragment content="Time left: ">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <font key="NSFont" size="25" name="ChalkboardSE-Bold"/>
@@ -407,10 +314,10 @@
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <attributedString key="attributedText">
-                                                <fragment content="Time left:">
+                                                <fragment content="Time left: ">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="11" name="ChalkboardSE-Bold"/>
+                                                        <font key="NSFont" size="13" name="ChalkboardSE-Bold"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -418,7 +325,7 @@
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <attributedString key="attributedText">
-                                                <fragment content="Time left:">
+                                                <fragment content="Time left: ">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <font key="NSFont" size="25" name="ChalkboardSE-Bold"/>
@@ -429,7 +336,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqV-Uh-bmR" userLabel="TimeLeftNumber" customClass="remainingTimeLabel">
-                                        <rect key="frame" x="135.33333333333334" y="0.0" width="28.666666666666657" height="38.666666666666664"/>
+                                        <rect key="frame" x="144.5" y="0.0" width="29" height="45.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="28.670000076293945" id="fG6-Bx-S3I"/>
                                         </constraints>
@@ -483,18 +390,114 @@
                                             </attributedString>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qku-hf-u8J" userLabel="HighestScoreTag">
-                                        <rect key="frame" x="164" y="0.0" width="124" height="38.666666666666664"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYj-Cl-r7t" userLabel="scoreTag">
+                                        <rect key="frame" x="192.5" y="0.0" width="109.5" height="45.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Score:">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.57811000000000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="12" name="ChalkboardSE-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <attributedString key="attributedText">
+                                                <fragment content="Score:">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.57811000000000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="ChalkboardSE-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <attributedString key="attributedText">
+                                                <fragment content="Score:">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.57811000000000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="ChalkboardSE-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <attributedString key="attributedText">
+                                                <fragment content="Score:">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="16" name="ChalkboardSE-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <attributedString key="attributedText">
+                                                <fragment content="Score:  ">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.57811000000000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="29" name="ChalkboardSE-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngE-p7-6Aw" userLabel="scoreNumber" customClass="HighestScore">
+                                        <rect key="frame" x="321" y="0.0" width="41" height="45.5"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="80.670000000000002" id="WJK-a8-mzK">
-                                                <variation key="heightClass=compact-widthClass=compact" constant="110"/>
-                                                <variation key="heightClass=compact-widthClass=regular" constant="121.66999816894531"/>
-                                                <variation key="heightClass=regular-widthClass=compact" constant="110"/>
-                                                <variation key="heightClass=regular-widthClass=regular" constant="140.66999816894531"/>
+                                            <constraint firstAttribute="width" constant="41" id="eeb-CZ-1Nv">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="49"/>
                                             </constraint>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="Highest Score:">
+                                            <fragment content="0">
+                                                <attributes>
+                                                    <font key="NSFont" size="22" name="ChalkboardSE-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <attributedString key="attributedText">
+                                                <fragment content="0">
+                                                    <attributes>
+                                                        <font key="NSFont" size="18" name="ChalkboardSE-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <attributedString key="attributedText">
+                                                <fragment content="0">
+                                                    <attributes>
+                                                        <font key="NSFont" size="20" name="ChalkboardSE-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <attributedString key="attributedText">
+                                                <fragment content="0">
+                                                    <attributes>
+                                                        <font key="NSFont" size="32" name="ChalkboardSE-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qku-hf-u8J" userLabel="HighestScoreTag">
+                                        <rect key="frame" x="381" y="0.0" width="182" height="45.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Highest Score: ">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="17" name="ChalkboardSE-Bold"/>
@@ -505,7 +508,7 @@
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=compact-widthClass=compact">
                                             <attributedString key="attributedText">
-                                                <fragment content="Highest Score:">
+                                                <fragment content="Highest Score: ">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <font key="NSFont" size="12" name="ChalkboardSE-Bold"/>
@@ -516,7 +519,7 @@
                                         </variation>
                                         <variation key="heightClass=compact-widthClass=regular">
                                             <attributedString key="attributedText">
-                                                <fragment content="Highest Score:">
+                                                <fragment content="Highest Score: ">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <font key="NSFont" size="16" name="ChalkboardSE-Bold"/>
@@ -527,7 +530,7 @@
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <attributedString key="attributedText">
-                                                <fragment content="Highest Score:">
+                                                <fragment content="Highest Score: ">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <font key="NSFont" size="12" name="ChalkboardSE-Bold"/>
@@ -538,10 +541,10 @@
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <attributedString key="attributedText">
-                                                <fragment content="Highest Score:">
+                                                <fragment content="Highest Score: ">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="20" name="ChalkboardSE-Bold"/>
+                                                        <font key="NSFont" size="25" name="ChalkboardSE-Bold"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -549,110 +552,236 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5Z-gr-psd" userLabel="HighestScoreNumber" customClass="HighestScore">
-                                        <rect key="frame" x="288" y="0.0" width="21" height="38.666666666666664"/>
+                                        <rect key="frame" x="582" y="0.0" width="27" height="45.5"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="21" id="8lj-sr-QNh">
+                                            <constraint firstAttribute="width" constant="27" id="8lj-sr-QNh">
                                                 <variation key="heightClass=compact-widthClass=regular" constant="40"/>
-                                                <variation key="heightClass=regular-widthClass=regular" constant="35"/>
                                             </constraint>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="34">
+                                            <fragment content="0">
                                                 <attributes>
                                                     <font key="NSFont" size="27" name="ChalkboardSE-Bold"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=compact-widthClass=compact">
                                             <attributedString key="attributedText">
-                                                <fragment content="34">
+                                                <fragment content="0">
                                                     <attributes>
                                                         <font key="NSFont" size="13" name="ChalkboardSE-Bold"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <attributedString key="attributedText">
-                                                <fragment content="34">
+                                                <fragment content="0">
                                                     <attributes>
-                                                        <font key="NSFont" size="16" name="ChalkboardSE-Bold"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        <font key="NSFont" size="18" name="ChalkboardSE-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <attributedString key="attributedText">
-                                                <fragment content="34">
+                                                <fragment content="0">
                                                     <attributes>
                                                         <font key="NSFont" size="27" name="ChalkboardSE-Bold"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
                                         </variation>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="GLK-1x-Inb">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="362"/>
-                                        <variation key="heightClass=compact-widthClass=regular" constant="639"/>
-                                        <variation key="heightClass=regular-widthClass=compact" constant="309"/>
-                                        <variation key="heightClass=regular-widthClass=regular" constant="547"/>
-                                    </constraint>
-                                    <constraint firstAttribute="height" constant="38.5" id="ZU4-Wi-wAh">
-                                        <variation key="heightClass=regular-widthClass=regular" constant="38.5"/>
-                                    </constraint>
-                                </constraints>
-                                <variation key="heightClass=compact-widthClass=regular" spacing="5"/>
-                                <variation key="heightClass=regular-widthClass=regular"/>
+                                <variation key="heightClass=regular-widthClass=compact" spacing="2"/>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Y2w-BF-5l2" userLabel="Name Stack">
+                                <rect key="frame" x="437.5" y="134.5" width="149" height="45.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLP-sG-ny9" userLabel="UserNameTag">
+                                        <rect key="frame" x="0.0" y="0.0" width="62.5" height="45.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="You:">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="ChalkboardSE-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <attributedString key="attributedText">
+                                                <fragment content="You:">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="25" name="ChalkboardSE-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <attributedString key="attributedText">
+                                                <fragment content="You:">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="21" name="ChalkboardSE-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <attributedString key="attributedText">
+                                                <fragment content="You:">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="32" name="ChalkboardSE-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXb-lz-UIn" userLabel="User Name">
+                                        <rect key="frame" x="69.5" y="0.0" width="79.5" height="45.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Jacob">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="27" name="ChalkboardSE-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <attributedString key="attributedText">
+                                                <fragment content="Jacob">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="ChalkboardSE-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <attributedString key="attributedText">
+                                                <fragment content="Jacob">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="17" name="ChalkboardSE-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <attributedString key="attributedText">
+                                                <fragment content="Jacob">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="30" name="ChalkboardSE-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ4-e9-Qu4" userLabel="Combo label">
+                                <rect key="frame" x="647" y="144" width="311" height="32"/>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <attributedString key="attributedText"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <attributedString key="attributedText"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Abu-d2-O8F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="IvI-O5-QGW" secondAttribute="trailing" id="1fv-Lv-ZY9"/>
+                            <constraint firstItem="Abu-d2-O8F" firstAttribute="trailing" secondItem="xTM-8V-DQD" secondAttribute="trailing" id="4A4-hK-9eH">
+                                <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="50"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="45"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                            </constraint>
                             <constraint firstAttribute="bottom" secondItem="IvI-O5-QGW" secondAttribute="bottom" id="9U0-fR-88P"/>
-                            <constraint firstItem="IvI-O5-QGW" firstAttribute="leading" secondItem="Jzg-px-aak" secondAttribute="leading" id="J9f-pq-gMI"/>
-                            <constraint firstItem="aSd-0A-jBv" firstAttribute="centerX" secondItem="Jzg-px-aak" secondAttribute="centerX" id="K5F-fK-UnU"/>
-                            <constraint firstItem="IvI-O5-QGW" firstAttribute="top" secondItem="Jzg-px-aak" secondAttribute="top" id="LHa-kb-XRf"/>
-                            <constraint firstItem="aSd-0A-jBv" firstAttribute="top" secondItem="Jzg-px-aak" secondAttribute="top" constant="70" id="T1Y-MX-GGk">
-                                <variation key="heightClass=compact-widthClass=compact" constant="26"/>
-                                <variation key="heightClass=compact-widthClass=regular" constant="66"/>
-                                <variation key="heightClass=regular-widthClass=compact" constant="69"/>
+                            <constraint firstItem="Abu-d2-O8F" firstAttribute="bottom" secondItem="xTM-8V-DQD" secondAttribute="bottom" id="AZh-Ni-msh">
+                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="90"/>
+                            </constraint>
+                            <constraint firstItem="NZT-ht-9OW" firstAttribute="top" secondItem="Abu-d2-O8F" secondAttribute="top" constant="15" id="BAN-6B-NYw"/>
+                            <constraint firstItem="xTM-8V-DQD" firstAttribute="top" secondItem="gJ4-e9-Qu4" secondAttribute="bottom" constant="4" id="EZT-JG-DQY"/>
+                            <constraint firstItem="NZT-ht-9OW" firstAttribute="centerX" secondItem="Jzg-px-aak" secondAttribute="centerX" id="FXH-cu-F3h"/>
+                            <constraint firstItem="xTM-8V-DQD" firstAttribute="top" secondItem="Y2w-BF-5l2" secondAttribute="bottom" id="IrG-MT-nIZ"/>
+                            <constraint firstItem="IvI-O5-QGW" firstAttribute="leading" secondItem="Jzg-px-aak" secondAttribute="leading" id="J9f-pq-gMI"/>
+                            <constraint firstItem="IvI-O5-QGW" firstAttribute="top" secondItem="Jzg-px-aak" secondAttribute="top" id="LHa-kb-XRf"/>
+                            <constraint firstItem="xTM-8V-DQD" firstAttribute="leading" secondItem="Abu-d2-O8F" secondAttribute="leading" id="SO6-BQ-IBc">
+                                <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="50"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="45"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                            </constraint>
+                            <constraint firstItem="gJ4-e9-Qu4" firstAttribute="top" secondItem="NZT-ht-9OW" secondAttribute="bottom" constant="9.3300000000000001" id="T9K-ck-js8"/>
+                            <constraint firstItem="Y2w-BF-5l2" firstAttribute="top" secondItem="NZT-ht-9OW" secondAttribute="bottom" id="V0C-Fo-r1a"/>
+                            <constraint firstItem="Y2w-BF-5l2" firstAttribute="centerX" secondItem="Jzg-px-aak" secondAttribute="centerX" id="Yvj-PS-aq8"/>
+                            <constraint firstItem="Abu-d2-O8F" firstAttribute="trailing" secondItem="gJ4-e9-Qu4" secondAttribute="trailing" constant="50" id="ol9-7p-bLg">
+                                <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="66"/>
+                            </constraint>
+                            <constraint firstItem="gJ4-e9-Qu4" firstAttribute="leading" secondItem="Y2w-BF-5l2" secondAttribute="trailing" constant="60.329999999999998" id="vL4-oU-pxW">
+                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                             </constraint>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZNv-8K-4yq"/>
                     <connections>
+                        <outlet property="comboNotif" destination="gJ4-e9-Qu4" id="5Vg-rm-nXR"/>
+                        <outlet property="gameView" destination="xTM-8V-DQD" id="SaZ-Qz-TNB"/>
+                        <outlet property="highestScore" destination="d5Z-gr-psd" id="JyV-4d-B3A"/>
                         <outlet property="nameLabel" destination="NXb-lz-UIn" id="fFW-Bg-Gf6"/>
                         <outlet property="remainingTimeLabel" destination="TqV-Uh-bmR" id="iUU-IP-pmr"/>
-                        <segue destination="o1b-ig-Hrs" kind="show" identifier=" goToHighScoreFromGame" id="yM1-YJ-VZc"/>
+                        <outlet property="scoreCount" destination="ngE-p7-6Aw" id="pRC-yo-dMa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pqb-GI-8Os" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-674.4140625" y="889.89751098096622"/>
+            <point key="canvasLocation" x="-677.58164165931157" y="888.70967741935488"/>
         </scene>
         <!--Score Controller-->
         <scene sceneID="NNn-R5-anh">
             <objects>
-                <viewController storyboardIdentifier="ScoreView" id="o1b-ig-Hrs" customClass="ScoreController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScoreController" id="o1b-ig-Hrs" customClass="ScoreController" customModule="Bubble_Pop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pUM-f4-rpz">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="highScoreBackground" translatesAutoresizingMaskIntoConstraints="NO" id="L7u-EY-mi3">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njZ-8g-kM8" customClass="ScoreViewer">
+                                <rect key="frame" x="50" y="203" width="924" height="1005"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYH-mN-Cgi">
-                                <rect key="frame" x="55.666666666666657" y="281.33333333333331" width="316.66666666666674" height="63.333333333333314"/>
-                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                                <rect key="frame" x="240" y="74" width="544.5" height="109"/>
                                 <attributedString key="attributedText">
                                     <fragment content="High Scores">
                                         <attributes>
@@ -697,40 +826,72 @@
                                     </attributedString>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tZ-Xj-yF6">
+                                <rect key="frame" x="358.5" y="1238" width="307" height="71"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" subtitle="">
+                                    <backgroundConfiguration key="background" cornerRadius="20">
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="RETURN HOME">
+                                            <attributes>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="40" name="ChalkboardSE-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="returnMainPage:" destination="o1b-ig-Hrs" eventType="touchUpInside" id="Yui-rS-iTh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="J0c-D9-AeD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GYH-mN-Cgi" firstAttribute="centerY" secondItem="pUM-f4-rpz" secondAttribute="centerY" constant="-150" id="Gy7-h2-uWB">
-                                <variation key="heightClass=compact-widthClass=compact" constant="-70"/>
-                                <variation key="heightClass=regular-widthClass=regular" constant="-210"/>
-                            </constraint>
+                            <constraint firstItem="2tZ-Xj-yF6" firstAttribute="top" secondItem="njZ-8g-kM8" secondAttribute="bottom" constant="30" id="1pv-Vo-3lT"/>
+                            <constraint firstItem="GYH-mN-Cgi" firstAttribute="top" secondItem="J0c-D9-AeD" secondAttribute="top" id="1vS-4H-J9p"/>
+                            <constraint firstItem="J0c-D9-AeD" firstAttribute="trailing" secondItem="njZ-8g-kM8" secondAttribute="trailing" constant="50" id="AXS-lx-wDj"/>
                             <constraint firstItem="L7u-EY-mi3" firstAttribute="top" secondItem="pUM-f4-rpz" secondAttribute="top" id="OME-M1-dl7"/>
+                            <constraint firstItem="2tZ-Xj-yF6" firstAttribute="centerX" secondItem="pUM-f4-rpz" secondAttribute="centerX" id="QPl-wA-A4I"/>
                             <constraint firstItem="GYH-mN-Cgi" firstAttribute="centerX" secondItem="pUM-f4-rpz" secondAttribute="centerX" id="WRN-ho-EzR"/>
+                            <constraint firstItem="J0c-D9-AeD" firstAttribute="bottom" secondItem="2tZ-Xj-yF6" secondAttribute="bottom" constant="89" id="gyR-89-vMp">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="3"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="32"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="37"/>
+                            </constraint>
                             <constraint firstItem="L7u-EY-mi3" firstAttribute="bottom" secondItem="pUM-f4-rpz" secondAttribute="bottom" id="ln8-Ag-8ER"/>
                             <constraint firstItem="J0c-D9-AeD" firstAttribute="trailing" secondItem="L7u-EY-mi3" secondAttribute="trailing" id="n7I-n7-HX5"/>
                             <constraint firstItem="L7u-EY-mi3" firstAttribute="leading" secondItem="J0c-D9-AeD" secondAttribute="leading" id="sx7-55-fYF"/>
+                            <constraint firstItem="njZ-8g-kM8" firstAttribute="top" secondItem="GYH-mN-Cgi" secondAttribute="bottom" constant="20" id="xJC-M5-VXJ"/>
+                            <constraint firstItem="njZ-8g-kM8" firstAttribute="leading" secondItem="J0c-D9-AeD" secondAttribute="leading" constant="50" id="yX4-8F-yFq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rsW-gd-QVf"/>
+                    <connections>
+                        <outlet property="scoreViewer" destination="njZ-8g-kM8" id="nKa-Oj-00k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHq-LC-Tb7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="376" y="890"/>
+            <point key="canvasLocation" x="374.29906542056074" y="889.63282937365022"/>
         </scene>
         <!--Settings Controller-->
         <scene sceneID="YDZ-mA-vad">
             <objects>
                 <viewController id="0PM-eV-p8v" customClass="SettingsController" customModule="Bubble_Pop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ag1-Al-wJn" customClass="SCNView">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="namePage" translatesAutoresizingMaskIntoConstraints="NO" id="Ki9-66-eAI">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnI-E6-jfK" customClass="bubbleSizeLabel">
-                                <rect key="frame" x="320.66666666666669" y="505.33333333333331" width="46.666666666666686" height="35.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnI-E6-jfK" customClass="bubbleSizeLabel">
+                                <rect key="frame" x="752" y="719.5" width="20.5" height="47"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -739,47 +900,56 @@
                                 </variation>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="10" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="jq7-BV-EkM" customClass="timeSlider">
-                                <rect key="frame" x="108.66666666666669" y="328" width="211" height="31"/>
+                                <rect key="frame" x="310" y="548" width="404" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="207" id="3sE-Cy-Aa6">
                                         <variation key="heightClass=regular-widthClass=regular" constant="400"/>
                                     </constraint>
-                                    <constraint firstAttribute="height" constant="30" id="Ljo-eB-sTm"/>
+                                    <constraint firstAttribute="height" constant="30" id="Ljo-eB-sTm">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="5"/>
+                                    </constraint>
                                 </constraints>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="1" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="g4a-b6-HKI" customClass="bubbleSlider">
-                                <rect key="frame" x="108.66666666666669" y="418" width="211" height="31"/>
+                                <rect key="frame" x="310" y="638" width="404" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="RKl-hS-hiV"/>
+                                    <constraint firstAttribute="height" constant="30" id="RKl-hS-hiV">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="5"/>
+                                    </constraint>
                                     <constraint firstAttribute="width" constant="207" id="dTh-8v-ihf">
                                         <variation key="heightClass=regular-widthClass=regular" constant="400"/>
                                     </constraint>
                                 </constraints>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.80000000000000004" minValue="0.10000000000000001" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="erg-kf-I4e" customClass="bubbleSizeSlider">
-                                <rect key="frame" x="108.66666666666669" y="508" width="211" height="31"/>
+                                <rect key="frame" x="310" y="728" width="404" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="207" id="gkl-b2-csc">
                                         <variation key="heightClass=regular-widthClass=regular" constant="400"/>
                                     </constraint>
-                                    <constraint firstAttribute="height" constant="30" id="sIT-fD-Ob5"/>
+                                    <constraint firstAttribute="height" constant="30" id="sIT-fD-Ob5">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="5"/>
+                                    </constraint>
                                 </constraints>
                                 <color key="minimumTrackTintColor" systemColor="linkColor"/>
                             </slider>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rae-10-Ern" userLabel="Timer Stack">
-                                <rect key="frame" x="150.33333333333334" y="288" width="127.33333333333334" height="30"/>
+                                <rect key="frame" x="433" y="508" width="158.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8Z-Qc-VG0">
-                                        <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="128.5" height="30"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                        </variation>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="33"/>
                                         </variation>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timerImage" translatesAutoresizingMaskIntoConstraints="NO" id="1Y6-M7-dnE">
-                                        <rect key="frame" x="97.333333333333314" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="128.5" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="7HU-aR-8Mj"/>
                                             <constraint firstAttribute="width" constant="30" id="JhZ-cF-xtr"/>
@@ -788,19 +958,22 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhn-jj-VaV" userLabel="Bubble Stack">
-                                <rect key="frame" x="105.66666666666669" y="378" width="217" height="30"/>
+                                <rect key="frame" x="374" y="598" width="276.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bubble Count   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wn0-jb-MYz">
-                                        <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="246.5" height="30"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                        </variation>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="33"/>
                                         </variation>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubbleImage" translatesAutoresizingMaskIntoConstraints="NO" id="DxP-RX-3Zf">
-                                        <rect key="frame" x="187" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="246.5" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="axI-cg-RfK"/>
                                             <constraint firstAttribute="width" constant="30" id="iPb-Ar-PqJ"/>
@@ -809,10 +982,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEE-ut-Uxs" userLabel="Speed Stack">
-                                <rect key="frame" x="130.66666666666666" y="468" width="166.99999999999997" height="30"/>
+                                <rect key="frame" x="406.5" y="678.5" width="211" height="49"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bubble Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xb-mo-9D4">
-                                        <rect key="frame" x="0.0" y="0.0" width="137" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="49"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="xnB-pj-3vB">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="49"/>
@@ -821,21 +994,59 @@
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                        </variation>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="33"/>
                                         </variation>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speedImage" translatesAutoresizingMaskIntoConstraints="NO" id="UD8-44-omj">
-                                        <rect key="frame" x="137.00000000000003" y="0.0" width="30" height="30"/>
+                                        <rect key="frame" x="181" y="0.0" width="30" height="49"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="3Ns-qi-l0g"/>
-                                            <constraint firstAttribute="height" constant="30" id="Z5u-n1-ub0"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SV3-GS-bcX" userLabel="Difficulty Stack">
+                                <rect key="frame" x="425" y="758.5" width="174" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YK8-Zl-Z0a">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="P46-Uu-MfQ">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="49"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="33"/>
+                                        </variation>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="difficultyFlame" translatesAutoresizingMaskIntoConstraints="NO" id="Ckf-yG-zHj">
+                                        <rect key="frame" x="144" y="0.0" width="30" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="xWh-Dd-j7D"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dlk-rw-rud" userLabel="difficultySlider">
+                                <rect key="frame" x="310" y="818" width="404" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="aIC-Qd-y1h">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                    </constraint>
+                                </constraints>
+                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqs-DC-wO9">
-                                <rect key="frame" x="130.33333333333337" y="688" width="167.66666666666663" height="50.333333333333371"/>
+                                <rect key="frame" x="402.5" y="970.5" width="219.5" height="65.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Settings">
                                         <attributes>
@@ -871,7 +1082,12 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lop-u1-ds1">
-                                <rect key="frame" x="156" y="559.66666666666663" width="116.33333333333331" height="56.666666666666629"/>
+                                <rect key="frame" x="476.5" y="875" width="71" height="56.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56.5" id="5c8-Rl-FZ2">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="33.5"/>
+                                    </constraint>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="square.and.arrow.down.fill" catalog="system" cornerStyle="capsule">
                                     <backgroundConfiguration key="background">
@@ -881,7 +1097,7 @@
                                         <fragment content="SAVE">
                                             <attributes>
                                                 <color key="NSColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="30" name="ChalkboardSE-Regular"/>
+                                                <font key="NSFont" size="11" name="ChalkboardSE-Regular"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -893,7 +1109,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHi-NT-mIp" customClass="bubbleLabel">
-                                <rect key="frame" x="328.66666666666669" y="415.33333333333331" width="30.666666666666686" height="35.666666666666686"/>
+                                <rect key="frame" x="742" y="629.5" width="40.5" height="47"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -902,7 +1118,16 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0u-Wr-vIk" customClass="timeLabel">
-                                <rect key="frame" x="328.66666666666669" y="325.33333333333331" width="30.666666666666686" height="35.666666666666686"/>
+                                <rect key="frame" x="742" y="539.5" width="40.5" height="47"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="33"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmR-XS-4cE" userLabel="Difficulty Label" customClass="bubbleSizeLabel">
+                                <rect key="frame" x="752" y="809.5" width="20.5" height="47"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -914,51 +1139,99 @@
                         <viewLayoutGuide key="safeArea" id="Yym-je-xZF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="EEE-ut-Uxs" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="20" id="4By-Tw-8Sn"/>
+                            <constraint firstItem="EEE-ut-Uxs" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="-10" id="4By-Tw-8Sn">
+                                <variation key="heightClass=compact-widthClass=regular" constant="-10"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-40"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="rae-10-Ern" firstAttribute="centerX" secondItem="Ag1-Al-wJn" secondAttribute="centerX" id="4g1-ce-Pbr"/>
                             <constraint firstItem="g4a-b6-HKI" firstAttribute="centerX" secondItem="Ag1-Al-wJn" secondAttribute="centerX" id="7Ux-Gu-TAR"/>
                             <constraint firstItem="g4a-b6-HKI" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="-30" id="85r-Qm-mf7">
-                                <variation key="heightClass=compact-widthClass=compact" constant="-20"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="-40"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-40"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-80"/>
                             </constraint>
                             <constraint firstItem="lop-u1-ds1" firstAttribute="centerX" secondItem="Ag1-Al-wJn" secondAttribute="centerX" id="B8o-Du-QVS"/>
                             <constraint firstItem="rae-10-Ern" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="-160" id="G5u-qM-WYy">
                                 <variation key="heightClass=compact-widthClass=compact" constant="-140"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-190"/>
                             </constraint>
-                            <constraint firstItem="m0u-Wr-vIk" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="-120" id="HDT-qw-s7d"/>
+                            <constraint firstItem="m0u-Wr-vIk" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="-120" id="HDT-qw-s7d">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-140"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-160"/>
+                            </constraint>
                             <constraint firstItem="vhn-jj-VaV" firstAttribute="centerX" secondItem="Ag1-Al-wJn" secondAttribute="centerX" id="N5b-eP-L9l"/>
                             <constraint firstItem="Ki9-66-eAI" firstAttribute="leading" secondItem="Ag1-Al-wJn" secondAttribute="leading" id="PXW-IQ-fzd"/>
+                            <constraint firstItem="JmR-XS-4cE" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="80" id="SnK-vs-Gj0">
+                                <variation key="heightClass=compact-widthClass=regular" constant="90"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="70"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstItem="Ki9-66-eAI" firstAttribute="top" secondItem="Ag1-Al-wJn" secondAttribute="top" id="V7c-QK-RR1"/>
                             <constraint firstItem="m0u-Wr-vIk" firstAttribute="centerX" secondItem="Ag1-Al-wJn" secondAttribute="centerX" constant="150" id="VKb-8b-WnL">
                                 <variation key="heightClass=regular-widthClass=compact" constant="130"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="250"/>
                             </constraint>
-                            <constraint firstItem="lnI-E6-jfK" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="60" id="WxW-EB-eDX"/>
-                            <constraint firstItem="SHi-NT-mIp" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="-30" id="XzX-6q-b3M"/>
+                            <constraint firstItem="lnI-E6-jfK" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="60" id="WxW-EB-eDX">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-10"/>
+                            </constraint>
+                            <constraint firstItem="SHi-NT-mIp" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="-30" id="XzX-6q-b3M">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-80"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-40"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-80"/>
+                            </constraint>
                             <constraint firstItem="EEE-ut-Uxs" firstAttribute="centerX" secondItem="Ag1-Al-wJn" secondAttribute="centerX" id="YuB-RH-ndF">
                                 <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="lop-u1-ds1" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="125" id="acv-Lr-QqH">
-                                <variation key="heightClass=regular-widthClass=regular" constant="180"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="140"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="220"/>
                             </constraint>
                             <constraint firstItem="nqs-DC-wO9" firstAttribute="centerX" secondItem="Ag1-Al-wJn" secondAttribute="centerX" id="bL7-m0-VjK"/>
+                            <constraint firstItem="SV3-GS-bcX" firstAttribute="centerX" secondItem="Ag1-Al-wJn" secondAttribute="centerX" id="c3m-Oz-TVJ"/>
                             <constraint firstItem="nqs-DC-wO9" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="250" id="dgG-bH-EK6">
                                 <variation key="heightClass=regular-widthClass=regular" constant="320"/>
                             </constraint>
+                            <constraint firstItem="JmR-XS-4cE" firstAttribute="centerX" secondItem="Ag1-Al-wJn" secondAttribute="centerX" constant="150" id="g5l-zU-wTy">
+                                <variation key="heightClass=compact-widthClass=regular" constant="150"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="130"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                            </constraint>
                             <constraint firstItem="jq7-BV-EkM" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="-120" id="gHo-55-fZx">
-                                <variation key="heightClass=compact-widthClass=compact" constant="-100"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="-120"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-160"/>
                             </constraint>
                             <constraint firstItem="lnI-E6-jfK" firstAttribute="centerX" secondItem="Ag1-Al-wJn" secondAttribute="centerX" constant="150" id="hIs-3u-IXg">
                                 <variation key="heightClass=compact-widthClass=regular" constant="150"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="130"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="250"/>
                             </constraint>
+                            <constraint firstItem="Dlk-rw-rud" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="80" id="n8S-JM-gaY">
+                                <variation key="heightClass=compact-widthClass=regular" constant="90"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="70"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="Ki9-66-eAI" secondAttribute="trailing" id="otJ-hN-rNA"/>
                             <constraint firstItem="vhn-jj-VaV" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="-70" id="qef-wm-fgA">
-                                <variation key="heightClass=compact-widthClass=compact" constant="-60"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="-80"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-80"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-120"/>
+                            </constraint>
+                            <constraint firstItem="SV3-GS-bcX" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="50" id="tAV-BZ-EEE">
+                                <variation key="heightClass=compact-widthClass=regular" constant="60"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                             </constraint>
                             <constraint firstItem="jq7-BV-EkM" firstAttribute="centerX" secondItem="Ag1-Al-wJn" secondAttribute="centerX" id="tNr-5z-RDe"/>
                             <constraint firstItem="erg-kf-I4e" firstAttribute="centerX" secondItem="Ag1-Al-wJn" secondAttribute="centerX" id="uNy-aE-Epg"/>
-                            <constraint firstItem="erg-kf-I4e" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="60" id="umd-IB-nkC"/>
+                            <constraint firstItem="erg-kf-I4e" firstAttribute="centerY" secondItem="Ag1-Al-wJn" secondAttribute="centerY" constant="60" id="umd-IB-nkC">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-10"/>
+                            </constraint>
+                            <constraint firstItem="Dlk-rw-rud" firstAttribute="centerX" secondItem="Ag1-Al-wJn" secondAttribute="centerX" id="vZh-0Y-VWF"/>
                             <constraint firstAttribute="bottom" secondItem="Ki9-66-eAI" secondAttribute="bottom" id="wOw-tj-idM"/>
                             <constraint firstItem="SHi-NT-mIp" firstAttribute="centerX" secondItem="Ag1-Al-wJn" secondAttribute="centerX" constant="150" id="wVs-MQ-wtc">
                                 <variation key="heightClass=regular-widthClass=compact" constant="130"/>
@@ -972,25 +1245,25 @@
                         <outlet property="bubbleSizeLabel" destination="lnI-E6-jfK" id="sEZ-FG-FfY"/>
                         <outlet property="bubbleSizeSlider" destination="erg-kf-I4e" id="bsS-HI-h6T"/>
                         <outlet property="bubbleSlider" destination="g4a-b6-HKI" id="ega-8M-ve7"/>
+                        <outlet property="difficultyLabel" destination="JmR-XS-4cE" id="uhb-7C-bph"/>
+                        <outlet property="difficultySlider" destination="Dlk-rw-rud" id="sim-WT-N6S"/>
                         <outlet property="timeLabel" destination="m0u-Wr-vIk" id="kFJ-Uv-F7x"/>
                         <outlet property="timeSlider" destination="jq7-BV-EkM" id="ywU-4P-ihq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BkG-1S-gD2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="916.19870410367173" y="95.327102803738313"/>
+            <point key="canvasLocation" x="915" y="93.75"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="WpT-hb-1WM"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="backgroundImage" width="150" height="225"/>
-        <image name="bubbleImage" width="149.66667175292969" height="148.33332824707031"/>
-        <image name="highScoreBackground" width="654.33331298828125" height="656.33331298828125"/>
+        <image name="bubbleImage" width="149.5" height="148.5"/>
+        <image name="difficultyFlame" width="120.5" height="148.5"/>
+        <image name="highScoreBackground" width="654.5" height="656.5"/>
         <image name="namePage" width="270" height="480"/>
-        <image name="settingsImage" width="287" height="245.33332824707031"/>
-        <image name="speedImage" width="138" height="149.66667175292969"/>
+        <image name="settingsImage" width="287" height="245.5"/>
+        <image name="speedImage" width="138" height="149.5"/>
         <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
         <image name="timerImage" width="128" height="128"/>
         <namedColor name="AccentColor">
@@ -1002,11 +1275,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

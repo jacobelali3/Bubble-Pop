@@ -1,8 +1,8 @@
 //
-//  AppDelegate.swift
+//  Bubble.swift
 //  Bubble Pop
 //
-//  Created by user215019 on 4/24/22.
+//  Created by Jacob Elali on 16/4/2022.
 //
 
 import UIKit
@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // MARK: UISceneSession Lifecycle
-
+    
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
